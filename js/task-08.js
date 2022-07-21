@@ -28,11 +28,13 @@ function onFormSubmit(event) {
   }
 
   const formData = new FormData(event.currentTarget);
+  const userData = {};
   formData.forEach((value, name) => {
-    console.log(name, ":", value);
+    userData[name] = value;
   });
+  console.log(userData);
 
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
-
-  event.currentTarget.reset();
+  if (email.value !== "" && password.value !== "") {
+    event.currentTarget.reset();
+  }
 }

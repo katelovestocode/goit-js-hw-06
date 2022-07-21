@@ -32,4 +32,7 @@ function onInputBlur(event) {
     inputEl.classList.remove("valid");
     inputEl.classList.add("invalid");
   }
+
+  //  inputEl.dataset.length  === inputEl.getAttribute("data-length")
+  // console.log(inputEl.getAttribute("data-length"));
 }

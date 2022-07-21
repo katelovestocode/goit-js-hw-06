@@ -30,10 +30,10 @@ const ingredients = [
 
 const listEl = document.querySelector("#ingredients");
 
-const elements = ingredients.map((option, index, array) => {
+const elements = ingredients.map((option) => {
   const ItemEl = document.createElement("li");
   ItemEl.classList.add("item");
-  ItemEl.textContent = array[index];
+  ItemEl.textContent = option;
 
   return ItemEl;
 });
