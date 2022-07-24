@@ -34,3 +34,11 @@ button {
 /* ul {
   list-style: none;
 } */
+
+#boxes {
+  display: flex;
+}
+
+.item {
+  margin: 10px;
+}
